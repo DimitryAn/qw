@@ -68,7 +68,7 @@ int main()
         --f;
     }
     cout << setprecision(6) << fixed;
-    cout << find_left_right_limit(n, massive, right_limit, left_limit).first << " ";
-    cout << find_left_right_limit(n, massive, right_limit, left_limit).second;
+    pair <double,double> value = find_left_right_limit(n, massive, right_limit, left_limit);
+    cout << value.first << " " << value.second;
     return 0;
 }
